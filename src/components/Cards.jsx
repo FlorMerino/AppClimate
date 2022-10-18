@@ -2,10 +2,16 @@ import React from 'react';
 import './Cards.css';
 import Card from './Card.jsx';
 import SearchBar from './SearchBar';
+import {motion } from "framer-motion/dist/framer-motion"; 
 
 export default function Cards({onSearch,cities, onClose}) {
-  return (
-    <div >
+  return ( 
+      <motion.div 
+      
+      initial={{opacity:0}}
+      animate={{opacity: 1}}
+      exit={{opacity:0}}
+      >
       <div>
        <SearchBar onSearch={onSearch} />
       </div>
@@ -20,6 +26,7 @@ export default function Cards({onSearch,cities, onClose}) {
             id={c.id}
           /> )}
       </div>
-    </div>
+        
+    </motion.div>
   );
 }

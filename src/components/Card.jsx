@@ -1,12 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Card.css';
-import {motion } from "framer-motion/dist/framer-motion"; 
+
 
 export default function Card ({min, max, name, img, onClose, id}) {
  
   return (
       <div className="card">
+
         <div className="blob"></div>
         <div className="blob"></div>
         <div className="blob"></div>
@@ -33,11 +34,11 @@ export default function Card ({min, max, name, img, onClose, id}) {
               <p>{max}°</p>
               </div>
              <p className='ocultButton' >
-               <Link to={`/city/${id}`} >
+               <Link to={`/extended-Forecast/${id}`} >
                 <button className='buttonInfo' >
                   <span className="shadow"></span>
                   <span className="edge"></span>
-                  <span className="front text"> More info
+                  <span className="front text"> extended...
                   </span> 
                 </button>
                 </Link> 

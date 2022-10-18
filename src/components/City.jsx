@@ -1,5 +1,6 @@
 import React from "react";
-import './Card.css'
+import './City.css';
+import './Card.css';
 import {motion } from "framer-motion/dist/framer-motion"; 
 //class City extends React.Component {
     //constructor -> cuando quiero definir un estado:
@@ -13,30 +14,46 @@ import {motion } from "framer-motion/dist/framer-motion";
 //        )
 //    }
 //}
-export default function City ({city}){
-  if (!city){
-      alert ('la ciudad no existe')
-      return ( <div>La ciudad no existe</div> )
+export default function City ({cities}){
+  if (cities.length ===0){
+      alert ('Error al buscar mas informacion')
+      return ( <div>Error al buscar mas informacion</div> )
    } 
 
  return (
     <motion.div 
-    className="card"
-    initial={{width:0}}
-    animate={{width: "100%"}}
-    exit={{position: "absolute"}}
-    >
-      <div className="container">
-         <h2>{city.name}</h2>
-         <div className="info">
-              <div>Temperatura: {city.temp} ºC</div>
-              <div>Clima: {city.weather}</div>
-              <div>Viento: {city.wind} km/h</div>
-              <div>Cantidad de nubes: {city.clouds}</div>
-              <div>Latitud: {city.latitud}º</div>
-              <div>Longitud: {city.longitud}º</div>
-          </div>
-      </div>
+    className="city"
+    initial={{opacity:0}}
+    animate={{opacity: 1}}
+    exit={{opacity:0}}
+    > 
+    {
+        cities.map(city=>{
+            return(
+                <div className="card">
+                <div className="blob"></div>
+                  <div className="blob"></div>
+                  <div className="blob"></div>
+                  <div className="blob"></div>
+                  <div className="blob"></div>
+          
+                  <div className="card__content">
+          
+                   <h2>{city.name}</h2>
+                   <div className="info">
+                        <div> Temperatura: {city.temp} ºC</div>
+                        <div>Clima:   {city.weather}</div>
+                        <div>Viento:   {city.wind} km/h</div>
+                        <div>Cantidad de nubes:   {city.clouds}</div>
+                        <div>Latitud:   {city.latitud}º</div>
+                        <div>Longitud:   {city.longitud}º</div>
+                    </div>
+                  </div>
+                </div>
+            )
+        })
+    }
+      
    </motion.div>
   )
 

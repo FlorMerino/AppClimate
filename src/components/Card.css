@@ -32,15 +32,16 @@
   overflow: hidden;
  }
  .card-body {
+  color: white;
   margin-top: 0px !important;
   padding-top: 0px !important;
 } 
 .card-body h1{
-  color: black;
+  color: white;
   font-size: 22px;
 }
  .card__content {
-  background: linear-gradient(rgba(255, 255, 255, 0.233), rgba(143, 143, 143, 0.253));
+  background: linear-gradient(rgba(20 170 183 / 83%), rgba(251 0 255 / 58%)); 
   z-index: 1;
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
@@ -63,26 +64,28 @@
  .card .blob:nth-child(2) {
   left: -50px;
   top: -90px;
-  background:#3a76ff;
+  background: #005ed3;
  }
  
  .card .blob:nth-child(3) {
   left: 110px;
   top: -20px;
   z-index: -1;
-  background: #3a76ff;
+  width: 700rem;
+  background: #005ed3;
  }
  
  .card .blob:nth-child(4) {
   left: -40px;
   top: 133px;
-  background:  #03c8a8;
+  background: black;
  }
  
  .card .blob:nth-child(5) {
   left: 100px;
-  top: 180px;
-  background:  #03c8a8;
+  top: 140px;
+  width: 700rem;
+  background:  black;
  }
  #closeIcon {
   display: flex;

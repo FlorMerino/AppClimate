@@ -23,12 +23,14 @@ function Nav() {
 	</span>
     </Link>
 
-	<a href="#" className="navbar__link">
+    <Link to={'/city/Additional-Information'} >
+	<span href="#" className="navbar__link">
 		<span className="navbar__icon">
 			<Thermometer></Thermometer>
 		</span>
-		<span className="navbar__label">Extended</span>
-	</a>
+		<span className="navbar__label">More info</span>
+	</span>
+	</Link>
 
 	<Link to='/about'>
 	  <span className="navbar__link">

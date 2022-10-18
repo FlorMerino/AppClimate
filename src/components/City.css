@@ -1,0 +1,48 @@
+@media (min-width: 768px) {
+    .info {
+        display: grid;
+        grid-template-columns: 50% 50%; /* que ocupe la tercer parte del 100% de la pantalla xq son 3 espacios, o podemos poner 1fr (de fraccion)o poner repeat(3, 1fr)*/
+        column-gap: 0rem; /* separacion entre las columnas*/
+        justify-content: center;
+  
+    }
+}
+.city {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.city .card {
+    color: rgb(255, 255, 255);
+    margin-top: 8px;
+    position: relative;
+    width: 60%;
+    height: 16rem;
+    background: lightgrey;
+    box-shadow: #9700bddb 0 15px 40px -5px;
+    z-index: 1;
+    border-radius: 21px;
+    overflow: hidden;
+}
+.card h2{
+    margin-top: 1rem;
+}
+
+.info div {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.card .blob {
+    position: absolute;
+    z-index: -1;
+    border-radius: 5em;
+    width: 50rem;
+    height: 232px;
+   }
+   
+   
