@@ -8,11 +8,11 @@ export default function Card ({min, max, name, img, onClose, id}) {
   return (
       <div className="card">
 
+        {/* <div className="blob"></div>
         <div className="blob"></div>
         <div className="blob"></div>
         <div className="blob"></div>
-        <div className="blob"></div>
-        <div className="blob"></div>
+        <div className="blob"></div> */}
         <div className="card__content">
         <div id="closeIcon" className="row">
           <button onClick={onClose} className="btn btn-sm btn-danger">X</button>
@@ -36,7 +36,7 @@ export default function Card ({min, max, name, img, onClose, id}) {
              <p className='ocultButton' >
                <Link to={`/extended-Forecast/${id}`} >
                 <button className='buttonInfo' >
-                  <span className="shadow"></span>
+                  <span className="shadowB"></span>
                   <span className="edge"></span>
                   <span className="front text"> extended...
                   </span> 

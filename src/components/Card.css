@@ -104,7 +104,7 @@
   user-select: none;
   touch-action: manipulation;
 }
-.shadow {
+.shadowB {
   position: absolute;
   top: 0;
   left: 0;

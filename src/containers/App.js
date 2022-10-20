@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import './App.css';
 import Nav from '../components/Nav.jsx';
 import {Route} from 'react-router-dom';
-import About from '../components/About';
 import AnimatedRoutes from '../components/AnimatedRoutes';
 
 
@@ -134,11 +133,11 @@ function App() {
     render= {() => <Cards onSearch={onSearch} cities={cities} onClose={onClose}/>} 
     />  */}
     <div>
-    <Route
+    {/* <Route
     exact
     path='/about'
     render={() => <About />}
-    />
+    /> */}
     <AnimatedRoutes onSearch={onSearch} cities={cities} onClose={onClose} onFilterCityExtended={onFilterCityExtended} forecastExtended={forecastExtended} citiesExtended={citiesExtended} ></AnimatedRoutes> 
      {/* <Route exact path={'/city/:cityId'} render={({match}) => <City city={onFilter(match.params.cityId)}/>} /> */}
      {/*el ultimo nombre debe coincidir con el q le dimos cityId */}

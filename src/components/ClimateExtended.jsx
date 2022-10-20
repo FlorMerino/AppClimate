@@ -1,5 +1,6 @@
 import {motion } from "framer-motion/dist/framer-motion"; 
 import CardForDay from "./CardForDay";
+import Loading from "./Loading";
 
 
 export default function ClimateExtended ({id,citiesExtended}) {
@@ -13,8 +14,6 @@ export default function ClimateExtended ({id,citiesExtended}) {
     animate={{opacity: 1}}
     exit={{opacity:0}}>
         
-
-        extendido...
         {
           citiesExtended.length>0?
           <div>
@@ -36,7 +35,7 @@ export default function ClimateExtended ({id,citiesExtended}) {
             }
           </div>
           :
-          <p>loading....</p>
+          <Loading></Loading>
         }
     </motion.div>
   )

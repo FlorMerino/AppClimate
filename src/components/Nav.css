@@ -19,11 +19,13 @@ body {
   transition: 0.3s;
   margin-top: 2rem;
 }
+
 .navbar:hover {
   box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
 }
+
 .navbar__link {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   flex-direction: column;
   text-align: center;
@@ -79,4 +81,16 @@ body {
 
 .navbar-brand{
   font-size: 1.2rem;
+}
+
+@media (max-width: 768px){
+  .navbar{
+    display: flex;
+    flex-direction: column;
+    width: 10rem;
+    margin-left: 25%;
+  }
+  .navbar-brand{
+    display: contents;
+  }
 }
