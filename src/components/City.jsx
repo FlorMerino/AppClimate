@@ -2,6 +2,8 @@ import React from "react";
 import './City.css';
 import './Card.css';
 import {motion } from "framer-motion/dist/framer-motion"; 
+import Footer from '../components/Footer';
+
 //class City extends React.Component {
     //constructor -> cuando quiero definir un estado:
     //   constructor(props){
@@ -53,7 +55,7 @@ export default function City ({cities}){
             )
         })
     }
-      
+    <Footer element={cities}></Footer>      
    </motion.div>
   )
 

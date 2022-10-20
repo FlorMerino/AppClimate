@@ -1,5 +1,5 @@
 import React from 'react';
-import Logo from '../img/logoHenry.png'
+import Logo from '../img/calentamiento-global.png'
 import './Nav.css';
 import { Link } from 'react-router-dom';
 import {User, Home, Sunrise, Sun,Thermometer, Moon} from 'react-feather';
@@ -11,7 +11,7 @@ function Nav() {
     
     <nav className="navbar">
        <span className="navbar-brand">
-          <img id="logoHenry" src={Logo} width="30" height="30" className="d-inline-block align-top" alt="" />
+          <img id="calentamiento-global" src={Logo} width="30" height="30" className="d-inline-block align-top" alt="" />
 		  WeatherApp
       </span>
 	<Link to='/'>

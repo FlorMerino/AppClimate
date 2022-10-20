@@ -1,7 +1,9 @@
 import React from "react";
 import {motion } from "framer-motion/dist/framer-motion"; 
+import Footer from '../components/Footer';
 
 export default function About (){
+    
     return (
      <motion.div 
      initial={{opacity:0}}
@@ -9,7 +11,10 @@ export default function About (){
      exit={{opacity:0}}>
          <h1>About Weather App!</h1>
          <p>kvdnvlsdjvñlkañlvksñlkvñlskvlñksñlkdvñslkdvlñ</p>
+
+         <Footer element={[]}></Footer>
      </motion.div>
+
     )
 }
 
