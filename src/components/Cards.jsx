@@ -3,6 +3,8 @@ import './Cards.css';
 import Card from './Card.jsx';
 import SearchBar from './SearchBar';
 import {motion } from "framer-motion/dist/framer-motion"; 
+import Footer from '../components/Footer';
+
 
 export default function Cards({onSearch,cities, onClose}) {
   return ( 
@@ -26,7 +28,7 @@ export default function Cards({onSearch,cities, onClose}) {
             id={c.id}
           /> )}
       </div>
-        
+      <Footer element={cities}></Footer>
     </motion.div>
   );
 }

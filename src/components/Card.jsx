@@ -21,17 +21,18 @@ export default function Card ({min, max, name, img, onClose, id}) {
             <h1 >{name}</h1>
         
            <div className="img">
-              <img className="iconoClima" src={"http://openweathermap.org/img/wn/"+img+"@2x.png"} width="80" height="80" alt="" />
+              <img className="iconoClima" src={`http://openweathermap.org/img/wn/${img}@2x.png`} width="80" height="80" alt="" />
            </div>
             {/*Cuando me haga click en el nombre de la ciudad, ya la estamos usando por eso no van los : */}
            <div className="row">
-              <div className="col-sm-4 col-md-4 col-lg-4">
-              <p>Min</p>
-              <p>{min}°</p>
+              
+              <div className='temp'>
+                <p>Min</p>
+                <p>{min}°</p>
               </div>
-              <div className="col-sm-4 col-md-4 col-lg-4">
-              <p>Max</p>
-              <p>{max}°</p>
+              <div className='temp'>
+               <p>Max</p>
+               <p>{max}°</p>
               </div>
              <p className='ocultButton' >
                <Link to={`/extended-Forecast/${id}`} >

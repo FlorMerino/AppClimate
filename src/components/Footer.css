@@ -1,0 +1,12 @@
+.footerNotElm {
+    margin-top: 20rem;
+    background-color: rgba(255, 228, 196, 0.945);
+    font-size: 13px;
+}
+
+.footerElem{
+    margin-top: 3rem;
+    background-color: rgba(255, 228, 196, 0.945);
+    font-size: 13px;
+
+}

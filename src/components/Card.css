@@ -21,10 +21,13 @@
 
 .card {
   color: black;
-  margin-top: 8px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-left: 0.5rem;
+  margin-right: 2rem;
   position: relative;
-  width: 220px;
-  height: 340px;
+  width: 12rem;
+  height: 19rem;
   background: lightgrey;
   box-shadow: #d11bff42 0 15px 40px -5px;
   z-index: 1;
@@ -36,6 +39,13 @@
   margin-top: 0px !important;
   padding-top: 0px !important;
 } 
+.temp{
+
+  position: relative;
+    width: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
 .card-body h1{
   color: white;
   font-size: 22px;
@@ -52,7 +62,9 @@
   height: 100%;
   border-radius: 21px;
  }
- 
+ .col-sm-4 .col-md-4 .col-lg-4{
+  width: none !important ;  
+ }
  .card .blob {
   position: absolute;
   z-index: -1;

@@ -142,7 +142,7 @@ function App() {
      {/* <Route exact path={'/city/:cityId'} render={({match}) => <City city={onFilter(match.params.cityId)}/>} /> */}
      {/*el ultimo nombre debe coincidir con el q le dimos cityId */}
     </div>
-      
+
     </div>
   );
 }
