@@ -46,7 +46,7 @@
         justify-content: center;  
     }
     .city .card {
-        width: 60%;
+        padding: 1rem 9rem;
         height: 16rem;
     }
 }  

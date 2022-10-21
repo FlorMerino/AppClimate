@@ -24,11 +24,11 @@ export default function City ({cities}){
 
  return (
     <motion.div 
-    className="city"
     initial={{opacity:0}}
     animate={{opacity: 1}}
     exit={{opacity:0}}
     > 
+    <div className="city">
     {
         cities.map(city=>{
             return(
@@ -55,8 +55,8 @@ export default function City ({cities}){
             )
         })
     }
-    <Footer element={cities}></Footer>      
-   </motion.div>
+    </div>
+       </motion.div>
   )
 
 }

@@ -1,6 +1,4 @@
-#logoHenry {
-  margin-right: 20px;
-}
+
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&display=swap");
 body {
   width: 100vw;
@@ -10,6 +8,8 @@ body {
   justify-content: center;
   background: #a770ef;
   background: linear-gradient(to right, #fdb99b, #cf8bf3, #a770ef);
+  background-size: cover;
+  min-height: 100vh;
 }
 
 .navbar {
@@ -72,6 +72,7 @@ body {
   font-family: "Roboto Mono", sans-serif;
   color: #e022bb;
   position: relative;
+  text-decoration: none;
   bottom: 0;
   font-size: 0.9375rem;
   transform: translateY(200%);
@@ -82,13 +83,15 @@ body {
 .navbar-brand{
   font-size: 1.2rem;
 }
-
+.subMenu{
+  display: flex;
+}
 @media (max-width: 768px){
   .navbar{
     display: flex;
     flex-direction: column;
-    width: 10rem;
-    margin-left: 25%;
+    width: 19rem;
+    
   }
   .navbar-brand{
     display: contents;

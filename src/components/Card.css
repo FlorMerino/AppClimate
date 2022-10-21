@@ -105,93 +105,31 @@
   margin-right: 8px;
   margin-top: 8px;
 }
+/* From uiverse.io by @bhaveshxrawat */
 .buttonInfo {
-  position:relative;
-  border: none;
-  background: transparent;
-  padding: 0;
-  cursor: pointer;
-  outline-offset: 4px;
-  transition: filter 250ms;
-  user-select: none;
-  touch-action: manipulation;
-}
-.shadowB {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 12px;
-  background: hsl(0deg 0% 0% / 0.25);
-  will-change: transform;
-  transform: translateY(2px);
-  transition: transform
-     600ms
-     cubic-bezier(.3, .7, .4, 1);
+  background-color: #ffffff57;
+  border-radius: 24px;
+  border-style: none;
+  box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+  box-sizing: border-box;
+  color: #3c4043;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: inherit;
+  letter-spacing: .25px;
+  line-height: normal;
+  padding: 11px 24px;
+  transition: background box-shadow 280ms ease;
  }
  
- .edge {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 12px;
-  background: linear-gradient(
-     to left,
-     hsl(340deg 100% 16%) 0%,
-     hsl(340deg 100% 32%) 8%,
-     hsl(340deg 100% 32%) 92%,
-     hsl(340deg 100% 16%) 100%
-   );
+ .buttonInfo:hover {
+  background: #F6F9FE;
+  color: #174ea6;
  }
  
- .front {
-  display: block;
-  position:relative;
-  padding: 12px 27px;
-  border-radius: 12px;
-  font-size: 1.1rem;
-  color: white;
-  background: hsl(345deg 100% 41%);
-  will-change: transform;
-  transform: translateY(-4px);
-  transition: transform
-     600ms
-     cubic-bezier(.3, .7, .4, 1);
- }
-a:-webkit-any-link{
-  text-decoration: none;
-}
-.buttonInfo:hover {
-  filter: brightness(110%);
- }
- 
- .buttonInfo:hover .front {
-  transform: translateY(-6px);
-  transition: transform
-     250ms
-     cubic-bezier(.3, .7, .4, 1.5);
- }
- 
- .buttonInfo:active .front {
-  transform: translateY(-2px);
-  transition: transform 34ms;
- }
- 
- .buttonInfo:hover .shadow {
-  transform: translateY(4px);
-  transition: transform
-     250ms
-     cubic-bezier(.3, .7, .4, 1.5);
- }
- 
- .buttonInfo:active .shadow {
-  transform: translateY(1px);
-  transition: transform 34ms;
- }
- 
- .buttonInfo:focus:not(:focus-visible) {
+ .buttonInfo:active {
+  box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
   outline: none;
+  border: 2px solid #4285f4;
  }
+ 

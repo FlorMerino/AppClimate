@@ -3,7 +3,7 @@ import './App.css';
 import Nav from '../components/Nav.jsx';
 import {Route} from 'react-router-dom';
 import AnimatedRoutes from '../components/AnimatedRoutes';
-
+import Footer from '../components/Footer';
 
 function App() {
 
@@ -124,6 +124,7 @@ function App() {
   //aca tenemos la raiz del arbol de componentes
   return (
     <div className="App">
+      
     <Route
     path='/'
     render={() => <Nav onSearch={onSearch} />}
@@ -142,7 +143,10 @@ function App() {
      {/* <Route exact path={'/city/:cityId'} render={({match}) => <City city={onFilter(match.params.cityId)}/>} /> */}
      {/*el ultimo nombre debe coincidir con el q le dimos cityId */}
     </div>
-
+    <Route
+    path='/'
+    render={() => <Footer />}
+    />
     </div>
   );
 }

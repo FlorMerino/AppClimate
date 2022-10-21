@@ -37,10 +37,7 @@ export default function Card ({min, max, name, img, onClose, id}) {
              <p className='ocultButton' >
                <Link to={`/extended-Forecast/${id}`} >
                 <button className='buttonInfo' >
-                  <span className="shadowB"></span>
-                  <span className="edge"></span>
-                  <span className="front text"> extended...
-                  </span> 
+                  extended
                 </button>
                 </Link> 
              </p>

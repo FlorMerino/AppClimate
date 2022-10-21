@@ -1,6 +1,5 @@
 import React from "react";
 import {motion } from "framer-motion/dist/framer-motion"; 
-import Footer from '../components/Footer';
 
 export default function About (){
     
@@ -10,9 +9,9 @@ export default function About (){
      animate={{opacity: 1}}
      exit={{opacity:0}}>
          <h1>About Weather App!</h1>
-         <p>kvdnvlsdjvñlkañlvksñlkvñlskvlñksñlkdvñslkdvlñ</p>
+         <p>This application is developed for practical purposes for the author. You will be able to browse freely and obtain forecast data for your area, both for the current date and for 5 days later. I hope you enjoy browsing!
+           Atte Florence Merino🌺​🖐️​</p>
 
-         <Footer element={[]}></Footer>
      </motion.div>
 
     )
