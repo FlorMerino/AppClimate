@@ -1,12 +1,12 @@
 .App {
-  width: 100vw;
-  height: 100vh;
+  /* width: 100vw;
+  height: 100vh; */
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   min-height: 100vh; /* tamaño fijo del body */
-  
+  min-width: 100vw;
 }
 #ligth{
   background: linear-gradient(to right, #fdb99b, #cf8bf3, #a770ef);
@@ -14,7 +14,7 @@
 }
 
 #dark{
-  background: linear-gradient(to right, #02003a, #251030, #1b003e);
+ background: linear-gradient(to right, #02003a, #251030, #2f003e);
   color: white;
 }
 
@@ -25,8 +25,8 @@ body {
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  background-size: cover;
   min-height: 100vh;
+
 }
 
 /*  background: linear-gradient(to right, #945f48, #9472a7, #6a508d);

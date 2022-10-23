@@ -40,6 +40,7 @@
   position: relative;
 }
 .navbar__icon::before {
+  
   content: "";
   width: 45px;
   height: 45px;
@@ -66,7 +67,9 @@
   transition: 0.3s cubic-bezier(0.09, 0.79, 0.57, 0.89);
   transition-delay: 0.2s;
 }
-
+a:hover{
+  text-decoration: none;
+}
 .navbar-brand{
   font-size: 1.2rem;
   color: black;

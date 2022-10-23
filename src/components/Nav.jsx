@@ -3,7 +3,7 @@ import Logo from '../img/calentamiento-global.png'
 import './Nav.css';
 import { Link } from 'react-router-dom';
 import {User,  Sunrise,Thermometer, Moon} from 'react-feather';
-
+import SwitchMUI from './Switch';
 
 function Nav({changeTheme}) {
 
@@ -44,10 +44,7 @@ function Nav({changeTheme}) {
 	</Link>
 
 	<a onClick={changeTheme} className="navbar__link">
-		<span className="navbar__icon">
-			<Moon></Moon>
-		</span>
-		<span className="navbar__label">Dark mode</span>
+      <SwitchMUI sx={{ m: 1 }} spellCheck ></SwitchMUI>
 	</a>
 
 	</div>
