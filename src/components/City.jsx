@@ -17,8 +17,9 @@ import {motion } from "framer-motion/dist/framer-motion";
 //}
 export default function City ({cities}){
   if (cities.length ===0){
-      alert ('Error al buscar mas informacion')
-      return ( <div>Error al buscar mas informacion</div> )
+      alert ('Error searching for more information')
+      return ( <h3>
+        Error searching for more information</h3> )
    } 
 
  return (
