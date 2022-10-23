@@ -1,6 +1,12 @@
-.footer{
+.footer {
     margin-top: auto;
-    background-color: rgba(255, 228, 196, 0.8);
     font-size: 13px;
     width: 100%;
+}
+#ligth .footer{
+    background-color: rgba(255, 228, 196, 0.8);
+}
+
+#dark .footer{
+    background-color: rgb(100, 0, 139);
 }

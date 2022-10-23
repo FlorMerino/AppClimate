@@ -2,7 +2,6 @@ import React from "react";
 import './City.css';
 import './Card.css';
 import {motion } from "framer-motion/dist/framer-motion"; 
-import Footer from '../components/Footer';
 
 //class City extends React.Component {
     //constructor -> cuando quiero definir un estado:
@@ -33,11 +32,11 @@ export default function City ({cities}){
         cities.map(city=>{
             return(
                 <div className="card">
-                <div className="blob"></div>
+                {/* <div className="blob"></div>
                   <div className="blob"></div>
                   <div className="blob"></div>
                   <div className="blob"></div>
-                  <div className="blob"></div>
+                  <div className="blob"></div> */}
           
                   <div className="card__content">
           

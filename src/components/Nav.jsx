@@ -1,14 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Logo from '../img/calentamiento-global.png'
 import './Nav.css';
 import { Link } from 'react-router-dom';
-import {User, Home, Sunrise, Sun,Thermometer, Moon} from 'react-feather';
+import {User,  Sunrise,Thermometer, Moon} from 'react-feather';
 
 
-function Nav() {
+function Nav({changeTheme}) {
+
   return (
     <div>
-    
     <nav className="navbar">
        <span className="navbar-brand">
           <img id="calentamiento-global" src={Logo} width="30" height="30" className="d-inline-block align-top" alt="" />
@@ -25,7 +25,7 @@ function Nav() {
     </Link>
 
     <Link to={'/city/Additional-Information'} >
-	<span href="#" className="navbar__link">
+	<span  className="navbar__link">
 		<span className="navbar__icon">
 			<Thermometer></Thermometer>
 		</span>
@@ -43,7 +43,7 @@ function Nav() {
 	  </span>
 	</Link>
 
-	<a href="#" className="navbar__link">
+	<a onClick={changeTheme} className="navbar__link">
 		<span className="navbar__icon">
 			<Moon></Moon>
 		</span>

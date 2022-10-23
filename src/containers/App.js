@@ -1,9 +1,12 @@
-import React, { useState } from 'react';
+import React, { useState, createContext } from 'react';
 import './App.css';
 import Nav from '../components/Nav.jsx';
 import {Route} from 'react-router-dom';
 import AnimatedRoutes from '../components/AnimatedRoutes';
 import Footer from '../components/Footer';
+
+
+export const ThemeContext = createContext(null);
 
 function App() {
 
@@ -121,33 +124,40 @@ function App() {
         return null;
     }
    }
+   //para el modo oscuro
+   const [theme, setTheme]= useState('ligth');
+  
+   const changeTheme = (e)=>{
+	  if(e.type==='click'){
+        if(theme ==='ligth'){
+          setTheme('dark')
+		}else{
+			setTheme('ligth')
+		}
+	  }
+
+	}
+
   //aca tenemos la raiz del arbol de componentes
   return (
-    <div className="App">
+    <ThemeContext.Provider value={{theme, setTheme}}> {/* envuelvo la aplicacion con el theme*/}
+    <div className="App" id={theme} >
       
     <Route
     path='/'
-    render={() => <Nav onSearch={onSearch} />}
+    render={() => <Nav changeTheme={changeTheme}/>}
     />
     <hr />
-    {/* <Route exact path='/'
-    render= {() => <Cards onSearch={onSearch} cities={cities} onClose={onClose}/>} 
-    />  */}
-    <div>
-    {/* <Route
-    exact
-    path='/about'
-    render={() => <About />}
-    /> */}
-    <AnimatedRoutes onSearch={onSearch} cities={cities} onClose={onClose} onFilterCityExtended={onFilterCityExtended} forecastExtended={forecastExtended} citiesExtended={citiesExtended} ></AnimatedRoutes> 
-     {/* <Route exact path={'/city/:cityId'} render={({match}) => <City city={onFilter(match.params.cityId)}/>} /> */}
-     {/*el ultimo nombre debe coincidir con el q le dimos cityId */}
+    <div>    
+    <AnimatedRoutes onSearch={onSearch} cities={cities} onClose={onClose} onFilterCityExtended={onFilterCityExtended} forecastExtended={forecastExtended} citiesExtended={citiesExtended} theme={theme} ></AnimatedRoutes> 
+ 
     </div>
     <Route
     path='/'
-    render={() => <Footer />}
+    render={() => <Footer theme={theme}/>}
     />
     </div>
+    </ThemeContext.Provider>
   );
 }
 

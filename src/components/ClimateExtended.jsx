@@ -1,7 +1,6 @@
 import {motion } from "framer-motion/dist/framer-motion"; 
 import CardForDay from "./CardForDay";
 import Loading from "./Loading";
-import Footer from '../components/Footer';
 
 
 
@@ -39,7 +38,6 @@ export default function ClimateExtended ({id,citiesExtended}) {
           :
           <Loading></Loading>
         }
-        <Footer element={citiesExtended}></Footer>
     </motion.div>
   )
 

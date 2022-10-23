@@ -9,7 +9,8 @@ export default function About (){
      animate={{opacity: 1}}
      exit={{opacity:0}}>
          <h1>About Weather App!</h1>
-         <p>This application is developed for practical purposes for the author. You will be able to browse freely and obtain forecast data for your area, both for the current date and for 5 days later. I hope you enjoy browsing!
+         <p>This application is developed for practical purposes for the author. 
+            You will be able to browse freely and obtain forecast data for your area, both for the current date and for 5 days later. I hope you enjoy browsing!
            Atte Florence Merino🌺​🖐️​</p>
 
      </motion.div>

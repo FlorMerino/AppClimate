@@ -1,11 +1,36 @@
 .App {
+  width: 100vw;
+  height: 100vh;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   min-height: 100vh; /* tamaño fijo del body */
+  
+}
+#ligth{
+  background: linear-gradient(to right, #fdb99b, #cf8bf3, #a770ef);
+  color: black;
 }
 
+#dark{
+  background: linear-gradient(to right, #02003a, #251030, #1b003e);
+  color: white;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&display=swap");
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+/*  background: linear-gradient(to right, #945f48, #9472a7, #6a508d);
+*/
 .row {
   display: flex;
   justify-content: center;

@@ -1,17 +1,4 @@
 
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&display=swap");
-body {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  background: #a770ef;
-  background: linear-gradient(to right, #fdb99b, #cf8bf3, #a770ef);
-  background-size: cover;
-  min-height: 100vh;
-}
-
 .navbar {
   background: #fff;
   padding: 10px 30px;
@@ -82,6 +69,7 @@ body {
 
 .navbar-brand{
   font-size: 1.2rem;
+  color: black;
 }
 .subMenu{
   display: flex;
