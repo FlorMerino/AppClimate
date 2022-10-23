@@ -104,8 +104,7 @@ function App() {
     }
      
   }
-  console.log(citiesExtended)
-  console.log(cities)
+  
   //  function onFilterCities(ciudadId) {
   //   let ciudad = cities.filter(c => c.id === parseInt(ciudadId)); //la informacion que toma de URL (del match) la va
   //   //           esto recorre el arreglo                       a tomar como un string entonces lo transformamos en un nro
