@@ -8,7 +8,6 @@
     margin-top: 8px;
     position: relative;
     margin-bottom: 2rem;
-    width: 130%;
         height: 20rem;
     background: lightgrey;
     box-shadow: #9700bddb 0 15px 40px -5px;
@@ -46,6 +45,6 @@
     }
     .city .card {
         padding: 1rem 9rem;
-        height: 16rem;
+        height: 20rem;
     }
 }  
